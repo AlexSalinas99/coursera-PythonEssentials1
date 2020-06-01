@@ -1,0 +1,31 @@
+""" Coursera, "Python Essentials" by Rice. Second Assignment "Functions" """
+
+#Problem 5
+def funct(val):
+    """ Solve f(0),f(1),f(2),f(3) for f(x) = -5x^5+67x^2-47 """
+    return -5*val**5+67*val**2-47
+
+print(funct(0))
+print(funct(1))
+print(funct(2))
+print(funct(3))
+
+#Problem 6
+def future_value(present_value, annual_rate, periods_per_year, years):
+    """
+    Input: the numbers present_value, annual_rate, periods_per_year, years
+    Output: future value based on formula given in question
+    """
+    rate_per_period = annual_rate / periods_per_year
+    periods = periods_per_year * years
+
+    # Put your code here.
+    return present_value*(1 + rate_per_period)**periods
+
+print("$1000 at 2% compounded daily for 4 years yields $", future_value(1000, .02, 365, 4))
+
+#Problem 7
+def area_equilateral(side):
+    """ Area of an equilateral triangle with one side given """
+    print((3**0.5/4)*side**2)
+area_equilateral(5)
