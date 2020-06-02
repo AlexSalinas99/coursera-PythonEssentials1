@@ -1,0 +1,11 @@
+""" Collatz conjecture """
+
+def collatz(number):
+    """ Inputs a number and calculates Collatz function of some examples """
+    if (number % 2 == 0):
+        return (number//2)
+    else:
+        return (3*number + 1)
+    
+print(collatz((collatz(collatz(collatz(collatz(collatz(collatz(674)))))))))
+print(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(collatz(1071)))))))))))))))
